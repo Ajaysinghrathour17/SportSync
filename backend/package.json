@@ -1,0 +1,18 @@
+{
+  "name": "sportsync",
+  "version": "1.0.0",
+  "description": "a project that connect sport person for conenction and provides messaging system",
+  "main": "index.js",
+  "scripts": {
+    "run": "nodemon index.js"
+  },
+  "author": "ajay, astha, kishan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.4.0",
+    "nodemon": "^3.1.0"
+  }
+}
