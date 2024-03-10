@@ -1,42 +1,189 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  height: 85vh;
+  padding: 35px 70px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background: #c04848;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.539), rgba(105, 29, 101, 0.594)),
+    url('./assets/header-bg.png');
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  margin-left: 12vw;
+}
+
+.nav-links a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.authentication-buttons button {
+  margin-right: 10px;
+  padding: 8px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.authentication-buttons button:hover {
+  background-color: white;
+  color: black;
+  transform: rotate(1deg);
 }
 
-.card {
-  padding: 2em;
+header > h1 {
+  margin-top: 100px;
+  font-size: 34px;
+  width: 40%;
 }
 
-.read-the-docs {
-  color: #888;
+header > p {
+  margin: 30px 0;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 1px;
+
+  width: 40%;
+}
+
+header form {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+header form input {
+  border: none;
+  outline: none;
+  width: 90%;
+}
+
+/* Main */
+
+main {
+  padding: 35px 70px;
+}
+
+/* Members */
+.member-section h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.member-section .container {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.member-section .member-card {
+  width: 200px;
+  height: 220px;
+  padding: 14px 8px;
+  border-radius: 9px;
+  transition: 0.3s;
+  box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.252);
+}
+.member-section .member-card:hover {
+  width: 200px;
+  padding: 14px 8px;
+  border-radius: 9px;
+
+  box-shadow: 3px 4px 8px 2px rgba(175, 34, 180, 0.252);
+}
+
+.member-card img {
+  width: 65%;
+  height: 60%;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+  border-radius: 100%;
+}
+
+.member-card h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.member-card p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Events */
+.events {
+  margin: 70px 0;
+}
+
+.events h2 {
+  margin-bottom: 15px;
+}
+
+.events .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.events .container .card {
+  width: 400px;
+  height: 490px;
+  margin: 20px 0;
+  /* border: 1px solid rgb(185, 185, 185); */
+  box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.252);
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.events .container .card img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  transition: 0.3s;
+  padding: 20px 0;
+}
+
+.events .container .card img:hover {
+  scale: 1.1;
+}
+
+.events .container .card h4 {
+  margin: 14px 0;
 }
